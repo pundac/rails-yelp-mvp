@@ -1,0 +1,12 @@
+<h1>Complet your new restaurant</h1>
+<%=simple_form_for(@restaurant) do |f| %>
+<div class="form-group">
+  <%= f.input :name %>
+  <%= f.input :address %>
+  <%= f.input :phone_number %>
+  <%= f.input :category%>
+  <%= f.submit %>
+  
+<% end %>
+
+<div class="btn btn-light"><%=link_to "Back to list", restaurants_path %></div>
